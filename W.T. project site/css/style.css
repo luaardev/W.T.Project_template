@@ -1,0 +1,353 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+
+/* ******************* CONTACT FORM ********************** */
+section#main .primary form {
+    width: 500px;
+    background: url(../images/form-bg.png);
+    margin: 35px 0 25px 0;
+    padding: 10px 40px 50px 120px;
+}
+section#main .primary form p {
+  font-family: "MerriweatherBold", Serif;
+    font-size: 25px;
+  color: #000000;
+}
+section#main .primary form label {
+    display: block;
+    font-family: "MerriweatherBold", Serif;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 0 0 5px 0;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+section#main .primary form label span {
+    color: #046416;
+}
+section#main .primary form input,
+section#main .primary form select,
+section#main .primary form textarea {
+    margin-bottom: 20px;
+  padding: 9px 10px;
+    color: #6A6969;
+    background: #cbcbcb;
+  border-width: 1px;
+  border-style: solid;
+    border-color: #b8b8b8 #EBEBEB #EBEBEB #b8b8b8;
+  font: 15px Helvetica, Arial, Sans-serif;
+
+    -moz-box-shadow:inset 0 3px 1px rgba(0, 0, 0, .1);
+    -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, .1);
+    box-shadow:inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+section#main .primary form textarea {
+    height: 150px;
+    margin-bottom: 0;
+}
+section#main .primary form input:focus,
+section#main .primary form select:focus,
+section#main .primary form textarea:focus {
+  background: #F0F0F0;
+}
+section#main .primary form input.button {
+    height: 38px;
+  margin: 5px 0;
+  background: #e8491d;
+    border: 1px solid #e8491d;
+    font-family: "MerriweatherBold", Georgia, Serif;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #e8491d;
+    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #e8491d;
+    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #e8491d;
+}
+.ie7 section#main .primary form input.button {
+    padding: 0 2px;
+}
+#name, #message, #subject, #cemail{
+  width: 550px;
+}
+
+
+
+/* Social Sidebar (Contact form) */
+aside#sidebar1{
+  float:right;
+  width:30%;
+  margin-top:-595px;
+  margin-right:100px;
+}
+
+
+
+
+/* ******************* LOGIN FORM ********************** */
+section#main1 .primary form {
+    width: 500px;
+    background: url(../images/form-bg.png);
+    margin: 70px 0 25px 300px;
+    padding: 10px 40px 50px 120px;
+    text-align: center;
+}
+section#main1 .primary form p {
+  font-family: "MerriweatherBold", Serif;
+    font-size: 25px;
+  color: #000000;
+}
+section#main1 .primary form label {
+    display: block;
+    font-family: "MerriweatherBold", Serif;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 0 0 5px 0;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+section#main1 .primary form label span {
+    color: #046416;
+}
+section#main1 .primary form input,
+section#main1 .primary form select{
+    margin-bottom: 20px;
+  padding: 9px 10px;
+    color: #6A6969;
+    background: #cbcbcb;
+  border-width: 1px;
+  border-style: solid;
+    border-color: #b8b8b8 #EBEBEB #EBEBEB #b8b8b8;
+  font: 15px Helvetica, Arial, Sans-serif;
+
+    -moz-box-shadow:inset 0 3px 1px rgba(0, 0, 0, .1);
+    -webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, .1);
+    box-shadow:inset 0 1px 3px rgba(0, 0, 0, .1);
+}
+section#main1 .primary form input:focus,
+section#main1 .primary form select:focus{
+  background: #F0F0F0;
+}
+section#main1 .primary form input.button {
+    height: 38px;
+  margin: 5px 0;
+  background: #e8491d;
+    border: 1px solid #e8491d;
+    font-family: "MerriweatherBold", Georgia, Serif;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #e8491d;
+    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #e8491d;
+    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4), inset 0 1px 0 #e8491d;
+}
+.ie7 section#main1 .primary form input.button {
+    padding: 0 2px;
+}
+#email,#password,#fname,#cpassword,#uname{
+  width: 500px;
+}
